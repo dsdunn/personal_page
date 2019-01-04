@@ -9551,4 +9551,14 @@ header span {
   font-size: 1.1em;
 }
 
+.experience-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  height: 6em;
+}
+
 /*# sourceMappingURL=main.css.map */
