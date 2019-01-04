@@ -27,8 +27,19 @@ header {
   }
 }
 
-.project-img {
-  margin: 30px;
-  display: flex;
-  justify-content: center;
+.projects-container {
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-around;
+  margin-top: 2em;
 }
+
+.card-text {
+  font-size: .9em;
+}
+
+.card-title {
+  font-size: 1.1em;
+}
+
+
