@@ -9515,25 +9515,39 @@ body {
   padding-top: 0;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .jumbotron {
+  background: none;
+  padding-top: 0.4em;
   justify-content: center;
-  height: 78vh;
+  height: 100vh;
   margin-bottom: 0;
 }
 .jumbotron h1 {
-  margin-top: 3em;
+  margin-top: 3.5em;
   text-align: center;
-  font-size: 4em;
+  font-size: 5em;
+}
+.jumbotron p {
+  width: 68%;
+  margin: auto;
+  padding-top: 1.5em;
+  text-align: center;
+  font-size: 1.2em;
 }
 
-header {
-  display: flex;
-  margin: 1em 9em;
-  justify-content: space-between;
-  list-style-type: none;
-}
-header span {
-  font-size: 2em;
+.navbar-nav {
+  justify-content: space-around;
+  width: 100%;
 }
 
 .projects-container {
