@@ -11,87 +11,83 @@
         <link rel="stylesheet" href="css/normalize.css">
     </head>
     <body>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div id="top" class="jumbotron">
-        <nav class="navbar navbar-expand-lg navbar-light bg-none fixed-top" role="navigation">
-            <!-- <a class="navbar-brand" href="#top">dsdunn</a> -->
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <div id="navbar" class="navbar-collapse collapse">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link">Work</a>
-              <a class="nav-item nav-link">Experience</a>
-              <a class="nav-item nav-link">About</a>
-              <a class="nav-item nav-link">Contact</a>
-              <a class="nav-item nav-link">Music</a>
-            </div>
-          </div>
-        </nav> 
-        <h1>David Starr Dunn</h1>
-        <p class="sub-headline">Hello there! I'm a passionate developer who loves building beautiful, efficient web applications and solving complex problems with clean, modular code. </p>
-      </div>
-
-      <section id="projects">
-        <div class="container projects-container">
-          <div class="row project-row">
-            <div class="col-sm-6 px-4 py-4">
-              <img class="card-img-top" src="./assets/sceneit2.png">
-              <a class="card-body">
-                <h5 class="card-title">Scene-It</h5>
-                <p class="card-text">Find out what's goin on in your city this week.</p>
-                <p class="card-text"><em>React/Redux, Thunk middleware, Google Maps, Eventful api</em></p>
-              </a>
-            </div>
-            <div class="col-sm-6 px-4 py-4">
-              <img class="card-img-top" src="./assets/collecshare_landing.png">
-              <a class="card-body">
-                <h5 class="card-title">CollecShare</h5>
-                <p class="card-text">Upload images and explore users' profiles and collections.</p>
-                <p>React/Redux, Express, Multer middleware, Postgres, FireBase</p>
-              </a>
-            </div>
-            <div class="col-sm-6 px-4 py-4">
-              <img class="card-img-top" src="./assets/palette-picker1.png">
-              <a class="card-body">
-                <h5 class="card-title">Palette Picker</h5>
-                <p class="card-text">Generate and save custom color palletes and pallete sets.</p>
-                <p class="card-text"><em>Express, jQuery, Chai</em></p>
-              </a>
-            </div>
-            <div class="col-sm-6 px-4 py-4">
-              <img class="card-img-top" src="./assets/byob.jpeg">
-              <a class="card-body">
-                <h5 class="card-title">BYOB</h5>
-                <p class="card-text">An API allowing user to track and rate Denver's breweries and all their beers</p>
-                <p class="card-text"><em>Express, Knex, jsonwebtoken</em></p>
-              </a>
-            </div>
-            <div class="col-sm-6 px-4 py-4">
-              <img class="card-img-top" src="./assets/staticcomp3.png">
-              <a class="card-body">
-                <h5 class="card-title">Static Comp. 3</h5>
-                <p class="card-text">An exercise in building a complex layout with html and css according to a example image.</p>
-                <p class="card-text"><em>HTML5, CSS3</em></p>
-              </a>
-            </div>
-            <div class="col-sm-6 px-4 py-4">
-              <img class="card-img-top" src="./assets/calculator.png">
-              <a class="card-body">
-                <h5 class="card-title">JS Calulator</h5>
-                <p class="card-text">This freecodecamp.com project built on codepen was a milestone for me, and a big confidence booster when I first started learning JavaScript.</p>
-                <p class="card-text"><em>HTML5, CSS3, jQuery</em></p>
-              </a>
-            </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-none fixed-top" role="navigation">
+          <!-- <a class="navbar-brand" href="#top">dsdunn</a> -->
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link">Work</a>
+            <a class="nav-item nav-link">Experience</a>
+            <a class="nav-item nav-link">About</a>
+            <a class="nav-item nav-link">Contact</a>
+            <a class="nav-item nav-link">Music</a>
           </div>
         </div>
-        <div class=in-progress-container>
-          <h5>Currently in progress as of January 2019:</h5>
-          <p>Seetune: Log with spotify OAuth and this web app generates graphs to visualize your listening preferences over time.</p>
-          <p>Impala: A 5" touchscreen interface to control electric windows, hydraulics, and running lights in a classic car. Built with Python and the kivy library</p>
-          <img src="./assets/impala.png">
+      </nav> 
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div id="top" class="jumbotron">
+        <div>
+          <h1>David Starr Dunn</h1>
+          <p class="sub-headline">Hello there! I'm a passionate developer who loves building beautiful, efficient web applications and solving complex problems with clean, modular code. </p>
+        </div>
+        <!-- add a slick graphic or scroll indicator here -->
+      </div>
+      <section id="projects">
+        <div class="container projects-container">
+          <h3>Some of my Work:</h3>
+          <div class="row project-row">
+            <div class="col-sm-6 col-md-4">
+              <img class="card-img-top" src="./assets/sceneit2.png">
+              <a class="card-body">
+                <p class="card-text">Find out what's goin on in your city this week. <em>- (React/Redux, Thunk middleware, Google Maps, Eventful api)</em></p>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img class="card-img-top" src="./assets/collecshare_landing.png">
+              <a class="card-body">
+                <!-- <h5 class="card-title">CollecShare</h5> -->
+                <p class="card-text">Upload images and explore users' profiles and collections. <em>- (React/Redux, Express, Multer middleware, Postgres, FireBase)</em></p>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img class="card-img-top" src="./assets/palette-picker1.png">
+              <a class="card-body">
+                <!-- <h5 class="card-title">Palette Picker</h5> -->
+                <p class="card-text">Generate and save custom color palletes and pallete sets. <em>- (Express, jQuery, Chai)</em></p>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img class="card-img-top" src="./assets/byob.jpeg">
+              <a class="card-body">
+                <!-- <h5 class="card-title">BYOB</h5> -->
+                <p class="card-text">An API allowing user to track and rate Denver's breweries and all their beers. <em>- (Express, Knex, jsonwebtoken)</em></p>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img class="card-img-top" src="./assets/staticcomp3.png">
+              <a class="card-body">
+                <!-- <h5 class="card-title">Static Comp. 3</h5> -->
+                <p class="card-text">An exercise in building a complex layout with html and css according to a example image. <em>- (HTML5, CSS3)</em></p>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img class="card-img-top" src="./assets/calculator.png">
+              <a class="card-body">
+                <!-- <h5 class="card-title">JS Calulator</h5> -->
+                <p class="card-text">This freecodecamp.com project built on codepen was a milestone for me, and a big confidence booster when I first started learning JavaScript. <em>- (HTML5, CSS3, jQuery)</em></p>
+              </a>
+            </div>
+          </div>
+          <div class="in-progress-container">
+            <h5>Currently in progress as of January 2019:</h5>
+            <p>Seetune: Log with spotify OAuth and this web app generates graphs to visualize your listening preferences over time.</p>
+            <p>Impala: A 5" touchscreen interface to control electric windows, hydraulics, and running lights in a classic car. Built with Python and the kivy library
+              <img src="./assets/impala.png">
+            </p>
+          </div>
         </div>
       </section>
 
