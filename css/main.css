@@ -9512,7 +9512,12 @@ h3 {
   }
 }
 body {
-  padding: 2em;
+  padding: 3em;
+}
+
+section {
+  margin: 10em auto;
+  padding: auto;
 }
 
 .navbar {
@@ -9543,10 +9548,6 @@ body {
   font-size: 1.2em;
 }
 
-.projects-container {
-  max-width: 1200px;
-}
-
 .card-text {
   font-size: 0.9em;
 }
@@ -9555,14 +9556,64 @@ body {
   font-size: 1.1em;
 }
 
-.experience-item-top {
+.experience-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+}
+.experience-container .experience-list {
+  padding-right: 3em;
+}
+.experience-container .experience-list .experience-item {
+  display: flex;
+  align-items: center;
+}
+.experience-container .experience-list .experience-item .ed-logo {
+  height: 6em;
+  max-width: 7em;
+  margin-right: 1.5em;
 }
 
-.logo {
-  height: 6em;
+.tech-stack {
+  background: lightblue;
+  padding: 1.5em;
+}
+
+.stack-collapse h5 {
+  font-size: 0.8em;
+}
+.stack-collapse ul {
+  padding: 0;
+}
+.stack-collapse li {
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  section {
+    max-width: 1600px;
+    margin: 9em auto;
+  }
+}
+@media (max-width: 991.98px) {
+  * {
+    font-size: 0.95rem;
+  }
+
+  body {
+    padding: 0.5em;
+  }
+
+  iframe {
+    max-width: 100vw;
+  }
+
+  .stack-collapse:not(.stack-expanded) {
+    display: none;
+  }
+
+  .ed-logo, .tech-stack {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
