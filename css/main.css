@@ -9533,11 +9533,11 @@ section {
 
 .jumbotron {
   background: none;
-  height: 90vh;
+  height: 85vh;
   padding-top: 5em;
 }
 .jumbotron h1 {
-  margin-top: 2em;
+  padding: 1.6em 0 0.3em 0;
   text-align: center;
   font-size: 5em;
 }
@@ -9559,6 +9559,9 @@ section {
 .card-img-top {
   margin-bottom: -1em;
 }
+.card-img-top .border {
+  border: 1px solid;
+}
 
 .card-text {
   font-size: 0.9em;
@@ -9568,18 +9571,26 @@ section {
   font-size: 1.1em;
 }
 
+.in-progress-container {
+  padding: 1em;
+}
+.in-progress-container p {
+  padding-left: 1.5em;
+}
+
 .experience-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 3em;
 }
 .experience-container .experience-list .experience-item {
   display: flex;
   align-items: center;
   margin-bottom: 1.8em;
+  padding-right: 1em;
 }
 .experience-container .experience-list .experience-item p {
-  max-width: 60em;
+  max-width: 900px;
 }
 .experience-container .experience-list .experience-item .ed-logo {
   height: 6em;
@@ -9590,7 +9601,7 @@ section {
 .tech-stack {
   background: lightblue;
   padding: 2.3em;
-  margin-top: -2em;
+  margin-top: -3em;
   width: 15em;
 }
 
@@ -9602,6 +9613,29 @@ section {
 }
 .stack-collapse li {
   list-style-type: none;
+}
+
+.about-section .bio {
+  padding-top: 3em;
+}
+.about-section p {
+  max-width: 900px;
+  margin: 0 auto 1.2em auto;
+}
+
+.music-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+}
+.music-container img {
+  object-fit: contain;
+  height: 300px;
+}
+.music-container .bandbamp-widget {
+  margin: auto;
+  height: 100%;
+  min-width: 260px;
 }
 
 @media (min-width: 768px) {
@@ -9619,6 +9653,10 @@ section {
     padding: 0.5em;
   }
 
+  .jumbotron {
+    height: auto;
+  }
+
   iframe {
     max-width: 100vw;
   }
@@ -9627,7 +9665,19 @@ section {
     display: none;
   }
 
-  .ed-logo, .tech-stack {
+  .tech-stack {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .ed-logo {
+    display: none;
+  }
+
+  .music-container {
+    display: block;
+  }
+  .music-container img {
     display: none;
   }
 }
