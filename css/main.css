@@ -9548,6 +9548,18 @@ section {
   font-size: 1.2em;
 }
 
+.project-container {
+  padding-top: 3em;
+}
+
+.project {
+  margin-bottom: 1em;
+}
+
+.card-img-top {
+  margin-bottom: -1em;
+}
+
 .card-text {
   font-size: 0.9em;
 }
@@ -9559,23 +9571,27 @@ section {
 .experience-container {
   display: flex;
   justify-content: space-between;
-}
-.experience-container .experience-list {
-  padding-right: 3em;
+  padding-top: 3em;
 }
 .experience-container .experience-list .experience-item {
   display: flex;
   align-items: center;
+  margin-bottom: 1.8em;
+}
+.experience-container .experience-list .experience-item p {
+  max-width: 60em;
 }
 .experience-container .experience-list .experience-item .ed-logo {
   height: 6em;
   max-width: 7em;
-  margin-right: 1.5em;
+  margin-right: 1.7em;
 }
 
 .tech-stack {
   background: lightblue;
-  padding: 1.5em;
+  padding: 2.3em;
+  margin-top: -2em;
+  width: 15em;
 }
 
 .stack-collapse h5 {
