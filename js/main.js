@@ -1,41 +1,38 @@
-let windowHeight = window.innerHeight;
 
-let titleExit = TweenMax.to('#title', 4, {y: -150, opacity: 0, paused: true});
+const titleExit = TweenMax.to('#title', 3, {opacity: 0, paused: true});
 
-let projectsEntry = TweenMax.fromTo('#projects', 6, {y: 600, opacity: 0, paused: true}, {y: -200, opacity: 1, paused: true});
+const projectsEntry = TweenMax.fromTo('#projects', 6, {y: 600, opacity: 0, paused: true}, {y: -200, opacity: 1, paused: true});
 
-$(window).resize(() => {
-  windowHeight = window.innerHeight;
-});
+const projectsExit = TweenMax.to('#projects', 3, {opacity: 0, paused: true});
+
+const experienceEntry = TweenMax.fromTo('#experience', 6, {y: 600, opacity: 0, paused: true}, {y: -200, opacity: 1, paused: true});
+
 
 $(window).scroll(() => {
 
-  // if (elTopPos($('#projects')) > 0) {
-  //   let fraction = $(window).scrollTop()  / $(this).height();
-  //   console.log(fraction)
-  //   projectsEntry.progress(fraction);
-  //  }
-  let depth = triggerDepth($('#trigger-top'));
+  let topDepth = triggerDepth($('#trigger-top'));
+      expDepth = triggerDepth($('#trigger-exp'));
 
 
-  if (depth < 550) {
-    let fraction = Math.pow(depth - 550, 2) / Math.pow(150, 2);
-    console.log(fraction)
+
+  if (topDepth < 550) {
+    let fraction = Math.pow(topDepth - 550, 2) / Math.pow(150, 2);
+
     projectsEntry.progress(fraction);
     titleExit.progress(fraction);
   }
 
+  if (expDepth < 550) {
+    console.log("expDepth: ", expDepth )
+    let fraction = Math.pow(expDepth - 550, 2) / Math.pow(150, 2);
+
+    experienceEntry.progress(fraction);
+    projectsExit.progress(fraction);
+  }
+
 })
 
-const elTopPos = (element) => window.innerHeight + window.scrollY - element.offset().top;
 
-const elBottomPos = (element) => {
-  return window.scrollY - element.offset().top + element.height() ;
-}
-
-const progress = (element) => {
-
-}
 
 const triggerDepth = (element) => {
   return element.offset().top - window.scrollY;
