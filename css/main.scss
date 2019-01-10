@@ -15,8 +15,12 @@ body {
 // }
 
 section {
-  margin: 10em auto;
-  padding: auto;
+  // margin: 10em auto;
+  // padding: auto;
+}
+
+.trigger {
+  margin-top: -3em;
 }
 
 .navbar {
@@ -32,7 +36,8 @@ section {
 
 .jumbotron {
   background: none;
-  // height: 85vh;
+  // height: 60vh;
+  margin-top: 5em;
   padding-top: 5em;
 
   h1 {
@@ -59,6 +64,7 @@ section {
     font-size: 1.2em;
   }
 }
+
 
 .project-container {
   padding-top: 3em;
@@ -185,7 +191,7 @@ section {
 
   section {
     max-width: 1600px;
-    margin: 9em auto;
+    // margin: 9em auto;
   }
 }
 

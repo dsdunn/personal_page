@@ -9515,9 +9515,8 @@ body {
   padding: 3em;
 }
 
-section {
-  margin: 10em auto;
-  padding: auto;
+.trigger {
+  margin-top: -3em;
 }
 
 .navbar {
@@ -9533,6 +9532,7 @@ section {
 
 .jumbotron {
   background: none;
+  margin-top: 5em;
   padding-top: 5em;
 }
 .jumbotron h1 {
@@ -9640,7 +9640,6 @@ section {
 @media (min-width: 768px) {
   section {
     max-width: 1600px;
-    margin: 9em auto;
   }
 }
 @media (max-width: 991.98px) {
