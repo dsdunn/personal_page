@@ -9515,12 +9515,8 @@ body {
   padding: 3em;
 }
 
-footer {
-  height: 9em;
-}
-
-.trigger {
-  margin-top: -3em;
+section {
+  margin: auto auto -12em auto;
 }
 
 .navbar {
@@ -9552,15 +9548,17 @@ footer {
 }
 
 .project-container {
-  padding-top: 3em;
+  padding: 3em 4.5em;
+  margin-bottom: -15em;
 }
 
 .project {
-  margin-bottom: 1em;
+  padding: 0 1.5em 0.5em 1.5em;
 }
 
 .card-img-top {
   margin-bottom: -1em;
+  filter: grayscale(10%);
 }
 .card-img-top .border {
   border: 1px solid;
@@ -9572,13 +9570,6 @@ footer {
 
 .card-title {
   font-size: 1.1em;
-}
-
-.in-progress-container {
-  padding: 1em;
-}
-.in-progress-container p {
-  padding-left: 1.5em;
 }
 
 .experience-container {
@@ -9662,6 +9653,7 @@ footer .social-bar .social-logo {
 footer p {
   text-align: right;
   position: relative;
+  margin-top: -5em;
   bottom: -8em;
 }
 
