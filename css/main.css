@@ -9584,13 +9584,17 @@ footer {
 .experience-container {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 3em;
+  padding-top: 2.5em;
+}
+.experience-container .experience-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .experience-container .experience-list .experience-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1.8em;
-  padding-right: 1em;
+  padding-right: 1.3em;
 }
 .experience-container .experience-list .experience-item p {
   max-width: 900px;
@@ -9603,8 +9607,7 @@ footer {
 
 .tech-stack {
   background: lightblue;
-  padding: 2.3em;
-  margin-top: -3em;
+  padding: 1em;
   width: 15em;
 }
 
@@ -9643,7 +9646,7 @@ footer {
 }
 
 footer {
-  height: 12em;
+  height: 10em;
   margin-top: 10em;
   margin-bottom: -8em;
 }
