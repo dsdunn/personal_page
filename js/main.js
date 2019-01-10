@@ -11,10 +11,12 @@ const experienceEntry = TweenMax.fromTo('#experience', 6, entryFromObj, entryToO
 const experienceExit = TweenMax.to('#experience', 3, {opacity: 0, paused: true});
 const aboutEntry = TweenMax.fromTo('#about', 6, entryFromObj, entryToObj);
 
+const aboutExit = TweenMax.to('#about', 3, exitObj);
+const musicEntry = TweenMax.fromTo('#music', 6, entryFromObj, entryToObj);
 
 $(window).scroll(() => {
 
-  const triggers = ['#trigger-top', '#trigger-exp', '#trigger-about'];
+  const triggers = ['#trigger-top', '#trigger-exp', '#trigger-about', '#trigger-music'];
 
   for (let i = 0; i < triggers.length; i++) {
     let trigger = triggers[i];
@@ -25,7 +27,6 @@ $(window).scroll(() => {
       move(trigger, depth);
     }
   }
-
 })
 
 const move = (trigger, depth) => {
@@ -43,6 +44,10 @@ const move = (trigger, depth) => {
     case '#trigger-about':
       experienceExit.progress(fraction);
       aboutEntry.progress(fraction);
+      break;
+    case '#trigger-music':
+      aboutExit.progress(fraction);
+      musicEntry.progress(fraction);
   }
 }
 

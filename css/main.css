@@ -9515,6 +9515,10 @@ body {
   padding: 3em;
 }
 
+footer {
+  height: 9em;
+}
+
 .trigger {
   margin-top: -3em;
 }
@@ -9626,6 +9630,7 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 3em;
+  padding-bottom: 3em;
 }
 .music-container img {
   object-fit: contain;
@@ -9635,6 +9640,26 @@ body {
   margin: auto;
   height: 100%;
   min-width: 260px;
+}
+
+footer {
+  height: 12em;
+  margin-top: 10em;
+  margin-bottom: -8em;
+}
+footer .social-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-bar .social-logo {
+  height: 3em;
+  margin: auto 3em;
+}
+footer p {
+  text-align: right;
+  position: relative;
+  bottom: -8em;
 }
 
 @media (min-width: 768px) {
