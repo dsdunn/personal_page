@@ -9515,9 +9515,12 @@ body {
   padding: 3em;
 }
 
-section {
-  margin: 10em auto;
-  padding: auto;
+footer {
+  height: 9em;
+}
+
+.trigger {
+  margin-top: -3em;
 }
 
 .navbar {
@@ -9533,7 +9536,7 @@ section {
 
 .jumbotron {
   background: none;
-  height: 85vh;
+  margin-top: 5em;
   padding-top: 5em;
 }
 .jumbotron h1 {
@@ -9581,13 +9584,17 @@ section {
 .experience-container {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 3em;
+  padding-top: 2.5em;
+}
+.experience-container .experience-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .experience-container .experience-list .experience-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1.8em;
-  padding-right: 1em;
+  padding-right: 1.3em;
 }
 .experience-container .experience-list .experience-item p {
   max-width: 900px;
@@ -9600,8 +9607,7 @@ section {
 
 .tech-stack {
   background: lightblue;
-  padding: 2.3em;
-  margin-top: -3em;
+  padding: 1em;
   width: 15em;
 }
 
@@ -9627,6 +9633,7 @@ section {
   display: flex;
   justify-content: center;
   padding-top: 3em;
+  padding-bottom: 3em;
 }
 .music-container img {
   object-fit: contain;
@@ -9638,10 +9645,29 @@ section {
   min-width: 260px;
 }
 
+footer {
+  height: 10em;
+  margin-top: 10em;
+  margin-bottom: -8em;
+}
+footer .social-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-bar .social-logo {
+  height: 3em;
+  margin: auto 3em;
+}
+footer p {
+  text-align: right;
+  position: relative;
+  bottom: -8em;
+}
+
 @media (min-width: 768px) {
   section {
     max-width: 1600px;
-    margin: 9em auto;
   }
 }
 @media (max-width: 991.98px) {
