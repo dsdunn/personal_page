@@ -9549,7 +9549,7 @@ section {
 
 .project-container {
   padding: 3em 4.5em;
-  margin-bottom: -15em;
+  margin-bottom: -18em;
 }
 
 .project {
@@ -9577,29 +9577,34 @@ section {
   justify-content: space-evenly;
   padding-top: 2.5em;
 }
-.experience-container .experience-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.experience-container .experience-list .experience-item {
+.experience-container .experience-item {
   display: flex;
   align-items: center;
+  margin-bottom: 1em;
   padding-right: 1.3em;
 }
-.experience-container .experience-list .experience-item p {
+.experience-container .experience-item h5 {
+  margin: 0;
+}
+.experience-container .experience-item strong {
+  margin: 0;
+}
+.experience-container .experience-item p {
   max-width: 900px;
 }
-.experience-container .experience-list .experience-item .ed-logo {
+.experience-container .experience-item .ed-logo {
   height: 6em;
   max-width: 7em;
   margin-right: 1.7em;
 }
 
 .tech-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: lightblue;
-  padding: 1em;
-  width: 15em;
+  padding: 1em 1.5em;
+  width: 12em;
 }
 
 .stack-collapse h5 {
