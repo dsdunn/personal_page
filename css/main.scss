@@ -6,6 +6,7 @@ body {
 
 section {
   margin: auto auto -12em auto;
+  border: 1px solid;
 }
 
 .navbar {
@@ -38,9 +39,7 @@ section {
   }
 }
 
-.projects-section {
-  margin-bottom: -18em;
-}
+// start projects section ------------------->
 
 .project-container {
   padding: 3em 4.5em;
@@ -168,7 +167,7 @@ footer {
 
   height: 10em;
   margin-top: 10em;
-  margin-bottom: -8em;
+  margin-bottom: 8em;
 
   .social-bar {
     display: flex;

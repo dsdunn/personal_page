@@ -32,33 +32,21 @@ $(window).scroll(() => {
     let trigger = triggers[i];
     let depth = triggerDepth($(trigger));
 
-
-    if (depth < 650) {
-      move(trigger, depth);
-    }
+    move(trigger, depth);
   }
 })
-
-
-// projectsLink.click(() => {
-
-//   let anchor = $('#trigger-top').offset().top - 300;
-
-//   TweenMax.to(window, 1, {scrollTo: anchor});
-// })
 
 $('#projects-link, #experience-link, #about-link, #music-link').click((event) => {
   scrollToAnchor(event.target.title);
 })
 
-$('#experience-link').click(() => {
-  TweenMax.to(window, 1, {scrollTo: 1200});
-})
-
 //  functions ----------------------------->
 
 const move = (trigger, depth) => {
-  let fraction = Math.pow(depth - 650, 2) / Math.pow(200, 2);
+  let fraction = 
+    depth < 450 ? 1 : 
+    depth < 650 ? Math.pow(depth - 650, 2) / Math.pow(200, 2) : 0;
+
 
   switch (trigger) {
     case '#trigger-top':
@@ -85,7 +73,7 @@ const triggerDepth = (element) => {
 
 const scrollToAnchor = (trigger) => {
   let anchor = $('#' + trigger).offset().top - 300;
-
+  console.log(anchor)
   TweenMax.to(window, 1, {scrollTo: anchor});
 }
 
