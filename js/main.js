@@ -1,18 +1,28 @@
+
+
+const projectsLink = $('#projects-link');
+      experienceLink = $('#experience-link');
+      aboutLink = $('#about-link');
+      musicLink = $('#music-link');
+
 const exitObj = {opacity: 0, scale: 0.9, paused: true}
-const entryFromObj = {y: 600, opacity: 0, scale: 0.7, paused: true};
+const entryFromObj = {y: 200, opacity: 0, scale: 0.7, paused: true};
 const entryToObj = {y: -200, opacity: 1, scale: 1, paused: true};
 
-const titleExit = TweenMax.to('#title', 3, exitObj);
-const projectsEntry = TweenMax.fromTo('#projects', 6, entryFromObj, entryToObj);
+const titleExit = TweenMax.to('#title', 2, exitObj);
+const projectsEntry = TweenMax.fromTo('#projects', 2, entryFromObj, entryToObj);
 
-const projectsExit = TweenMax.to('#projects', 3, exitObj);
-const experienceEntry = TweenMax.fromTo('#experience', 6, entryFromObj, entryToObj);
+const projectsExit = TweenMax.to('#projects', 2, exitObj);
+const experienceEntry = TweenMax.fromTo('#experience', 2, entryFromObj, entryToObj);
 
-const experienceExit = TweenMax.to('#experience', 3, exitObj);
-const aboutEntry = TweenMax.fromTo('#about', 6, entryFromObj, entryToObj);
+const experienceExit = TweenMax.to('#experience', 2, exitObj);
+const aboutEntry = TweenMax.fromTo('#about', 2, entryFromObj, entryToObj);
 
-const aboutExit = TweenMax.to('#about', 3, exitObj);
-const musicEntry = TweenMax.fromTo('#music', 6, entryFromObj, entryToObj);
+const aboutExit = TweenMax.to('#about', 2, exitObj);
+const musicEntry = TweenMax.fromTo('#music', 2, entryFromObj, entryToObj);
+
+
+// event listeners -------------------------->
 
 $(window).scroll(() => {
 
@@ -28,6 +38,20 @@ $(window).scroll(() => {
     }
   }
 })
+
+
+projectsLink.click(() => {
+
+  let anchor = $('#trigger-top').offset().top - 300;
+
+  TweenMax.to(window, 1, {scrollTo: anchor});
+})
+
+$('#experience-link').click(() => {
+  TweenMax.to(window, 1, {scrollTo: 1200});
+})
+
+//  functions ----------------------------->
 
 const move = (trigger, depth) => {
   let fraction = Math.pow(depth - 650, 2) / Math.pow(200, 2);
@@ -55,5 +79,8 @@ const triggerDepth = (element) => {
   return element.offset().top - window.scrollY;
 }
 
+const scrollToAnchor = (element) => {
+  
+}
 
 

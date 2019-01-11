@@ -4,18 +4,8 @@ body {
   padding: 3em;
 }
 
-// body::after {
-//   content: '';
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   width: 100%;
-//   z-index: -1;
-// }
-
 section {
-  margin-bottom: -12em;
+  margin: auto auto -12em auto;
 }
 
 .navbar {
@@ -29,7 +19,7 @@ section {
   width: 100%;
 }
 
-.jumbotron {
+.title {
   background: none;
   margin-top: 5em;
   padding-top: 5em;
@@ -258,10 +248,10 @@ footer {
 $base: 0.4rem;
 
 .scroll-arrow {
- display: flex;
- justify-content: center;
- align-items: center;
- padding-top: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem auto;
 }
 
 .chevron {
