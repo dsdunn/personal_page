@@ -9,17 +9,17 @@ const exitObj = {opacity: 0, scale: 0.9, paused: true}
 const entryFromObj = {y: 200, opacity: 0, scale: 0.7, paused: true};
 const entryToObj = {y: -200, opacity: 1, scale: 1, paused: true};
 
-const titleExit = TweenMax.to('#title', 2, exitObj);
-const projectsEntry = TweenMax.fromTo('#projects', 2, entryFromObj, entryToObj);
+const titleExit = TweenMax.to('#title', .5, exitObj);
+const projectsEntry = TweenMax.fromTo('#projects', .5, entryFromObj, entryToObj);
 
-const projectsExit = TweenMax.to('#projects', 2, exitObj);
-const experienceEntry = TweenMax.fromTo('#experience', 2, entryFromObj, entryToObj);
+const projectsExit = TweenMax.to('#projects', .5, exitObj);
+const experienceEntry = TweenMax.fromTo('#experience', .5, entryFromObj, entryToObj);
 
-const experienceExit = TweenMax.to('#experience', 2, exitObj);
-const aboutEntry = TweenMax.fromTo('#about', 2, entryFromObj, entryToObj);
+const experienceExit = TweenMax.to('#experience', .5, exitObj);
+const aboutEntry = TweenMax.fromTo('#about', .5, entryFromObj, entryToObj);
 
-const aboutExit = TweenMax.to('#about', 2, exitObj);
-const musicEntry = TweenMax.fromTo('#music', 2, entryFromObj, entryToObj);
+const aboutExit = TweenMax.to('#about', .5, exitObj);
+const musicEntry = TweenMax.fromTo('#music', .5, entryFromObj, entryToObj);
 
 
 // event listeners -------------------------->
@@ -40,11 +40,15 @@ $(window).scroll(() => {
 })
 
 
-projectsLink.click(() => {
+// projectsLink.click(() => {
 
-  let anchor = $('#trigger-top').offset().top - 300;
+//   let anchor = $('#trigger-top').offset().top - 300;
 
-  TweenMax.to(window, 1, {scrollTo: anchor});
+//   TweenMax.to(window, 1, {scrollTo: anchor});
+// })
+
+$('#projects-link, #experience-link, #about-link, #music-link').click((event) => {
+  scrollToAnchor(event.target.title);
 })
 
 $('#experience-link').click(() => {
@@ -79,8 +83,10 @@ const triggerDepth = (element) => {
   return element.offset().top - window.scrollY;
 }
 
-const scrollToAnchor = (element) => {
-  
+const scrollToAnchor = (trigger) => {
+  let anchor = $('#' + trigger).offset().top - 300;
+
+  TweenMax.to(window, 1, {scrollTo: anchor});
 }
 
 
