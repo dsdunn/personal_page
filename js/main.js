@@ -1,9 +1,9 @@
 
 
-const projectsLink = $('#projects-link');
-      experienceLink = $('#experience-link');
-      aboutLink = $('#about-link');
-      musicLink = $('#music-link');
+// const projectsLink = $('#projects-link');
+//       experienceLink = $('#experience-link');
+//       aboutLink = $('#about-link');
+//       musicLink = $('#music-link');
 
 let activeLink = '#top-link';
 
@@ -88,7 +88,7 @@ const updateActive = (trigger, depth) => {
       } else {
         $('.active').removeClass('active');
         $('#projects-link').addClass('active');
-        activeLink = '#top-link';
+        activeLink = '#projects-link';
       }
       break;
     case '#trigger-exp':
