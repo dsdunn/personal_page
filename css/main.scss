@@ -4,22 +4,8 @@ body {
   padding: 3em;
 }
 
-// body::after {
-//   content: '';
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   width: 100%;
-//   z-index: -1;
-// }
-
-footer {
-  height: 9em;
-}
-
-.trigger {
-  margin-top: -3em;
+section {
+  margin: auto auto -12em auto;
 }
 
 .navbar {
@@ -33,9 +19,8 @@ footer {
   width: 100%;
 }
 
-.jumbotron {
+.title {
   background: none;
-  // height: 60vh;
   margin-top: 5em;
   padding-top: 5em;
 
@@ -53,17 +38,19 @@ footer {
   }
 }
 
+// start projects section ------------------->
 
 .project-container {
-  padding-top: 3em;
+  padding: 3em 4.5em;
 }
 
 .project {
-  margin-bottom: 1em;
+  padding: 0 1.5em .5em 1.5em;
 }
 
 .card-img-top {
   margin-bottom: -1em;
+  filter: grayscale(10%);
 
   .border {
     border: 1px solid;
@@ -78,14 +65,6 @@ footer {
   font-size: 1.1em;
 }
 
-.in-progress-container {
-  padding: 1em;
-
-  p {
-    padding-left: 1.5em;
-  }
-}
-
 // start experience section -------------------->
 
 .experience-container {
@@ -93,36 +72,40 @@ footer {
   justify-content: space-evenly;
   padding-top: 2.5em;
 
-  .experience-list {
+  .experience-item {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1em; 
+    padding-right: 1.3em;
 
-    .experience-item {
-      display: flex;
-      align-items: center;
-      // margin-bottom: 1.8em; 
-      padding-right: 1.3em;
-
-      p {
-        max-width: 900px;
-      }
-
-      .ed-logo {
-        height: 6em;
-        max-width: 7em;
-        margin-right: 1.7em;
-      }
-     
+    h5 {
+      margin: 0;
     }
+
+    strong {
+      margin: 0;
+    }
+
+    p {
+      max-width: 900px;
+    }
+
+    .ed-logo {
+      height: 6em;
+      max-width: 7em;
+      margin-right: 1.7em;
+    }
+   
   }
-  
 }
 
 .tech-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: lightblue;
-  padding: 1em;
-  width: 15em;
+  padding: 1em 1.5em;
+  width: 12em;
 }
 
 .stack-collapse {
@@ -183,7 +166,7 @@ footer {
 
   height: 10em;
   margin-top: 10em;
-  margin-bottom: -8em;
+  margin-bottom: 8em;
 
   .social-bar {
     display: flex;
@@ -199,6 +182,7 @@ footer {
   p {
     text-align: right;
     position: relative;
+    margin-top: -5em;
     bottom: -8em;
   }
 }
@@ -256,6 +240,73 @@ footer {
   }
 }
 
+// scroll arrow by Jakub Honíšek from freeCss-------------------->
+
+
+$base: 0.4rem;
+
+.scroll-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem auto;
+}
+
+.chevron {
+  position: absolute;
+  width: $base * 3.5;
+  height: $base * 0.8;
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+ content: '';
+ position: absolute;
+ top: 0;
+ height: 100%;
+ width: 50%;
+ background: #2c3e50;
+}
+
+.chevron:before {
+ left: 0;
+ transform: skewY(30deg);
+}
+
+.chevron:after {
+ right: 0;
+ width: 50%;
+ transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+ 25% {
+  opacity: 1;
+  }
+ 33.3% {
+  opacity: 1;
+  transform: translateY($base * 3.8);
+ }
+ 66.6% {
+  opacity: 1;
+  transform: translateY($base * 5.2);
+ }
+ 100% {
+  opacity: 0;
+  transform: translateY($base * 8) scale(0.5);
+ }
+}
 
 
 

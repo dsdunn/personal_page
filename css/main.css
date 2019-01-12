@@ -9515,12 +9515,8 @@ body {
   padding: 3em;
 }
 
-footer {
-  height: 9em;
-}
-
-.trigger {
-  margin-top: -3em;
+section {
+  margin: auto auto -12em auto;
 }
 
 .navbar {
@@ -9534,17 +9530,17 @@ footer {
   width: 100%;
 }
 
-.jumbotron {
+.title {
   background: none;
   margin-top: 5em;
   padding-top: 5em;
 }
-.jumbotron h1 {
+.title h1 {
   padding: 1.6em 0 0.3em 0;
   text-align: center;
   font-size: 5em;
 }
-.jumbotron p {
+.title p {
   max-width: 1200px;
   margin: 2em auto;
   text-align: center;
@@ -9552,15 +9548,16 @@ footer {
 }
 
 .project-container {
-  padding-top: 3em;
+  padding: 3em 4.5em;
 }
 
 .project {
-  margin-bottom: 1em;
+  padding: 0 1.5em 0.5em 1.5em;
 }
 
 .card-img-top {
   margin-bottom: -1em;
+  filter: grayscale(10%);
 }
 .card-img-top .border {
   border: 1px solid;
@@ -9574,41 +9571,39 @@ footer {
   font-size: 1.1em;
 }
 
-.in-progress-container {
-  padding: 1em;
-}
-.in-progress-container p {
-  padding-left: 1.5em;
-}
-
 .experience-container {
   display: flex;
   justify-content: space-evenly;
   padding-top: 2.5em;
 }
-.experience-container .experience-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.experience-container .experience-list .experience-item {
+.experience-container .experience-item {
   display: flex;
   align-items: center;
+  margin-bottom: 1em;
   padding-right: 1.3em;
 }
-.experience-container .experience-list .experience-item p {
+.experience-container .experience-item h5 {
+  margin: 0;
+}
+.experience-container .experience-item strong {
+  margin: 0;
+}
+.experience-container .experience-item p {
   max-width: 900px;
 }
-.experience-container .experience-list .experience-item .ed-logo {
+.experience-container .experience-item .ed-logo {
   height: 6em;
   max-width: 7em;
   margin-right: 1.7em;
 }
 
 .tech-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: lightblue;
-  padding: 1em;
-  width: 15em;
+  padding: 1em 1.5em;
+  width: 12em;
 }
 
 .stack-collapse h5 {
@@ -9648,7 +9643,7 @@ footer {
 footer {
   height: 10em;
   margin-top: 10em;
-  margin-bottom: -8em;
+  margin-bottom: 8em;
 }
 footer .social-bar {
   display: flex;
@@ -9662,6 +9657,7 @@ footer .social-bar .social-logo {
 footer p {
   text-align: right;
   position: relative;
+  margin-top: -5em;
   bottom: -8em;
 }
 
@@ -9705,6 +9701,68 @@ footer p {
   }
   .music-container img {
     display: none;
+  }
+}
+.scroll-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem auto;
+}
+
+.chevron {
+  position: absolute;
+  width: 1.4rem;
+  height: 0.32rem;
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #2c3e50;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(1.52rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(2.08rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(3.2rem) scale(0.5);
   }
 }
 
