@@ -9530,6 +9530,10 @@ section {
   width: 100%;
 }
 
+.nav-item:hover {
+  cursor: pointer;
+}
+
 .title {
   background: none;
   margin-top: 5em;
