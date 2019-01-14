@@ -126,6 +126,8 @@ section {
       max-width: 900px;
       padding: 0.5em;
       margin: 0 0 0 0.5em;
+      border-left: 1px solid;
+      background: honeydew;
     }
 
     .ed-logo {
@@ -149,7 +151,8 @@ section {
 .stack-collapse {
 
   h5 {
-    font-size: .8em;
+    font-size: .97em;
+    margin-bottom: 1em;
   }
 
   ul {
