@@ -9522,6 +9522,7 @@ h1, h3, h5 {
 
 section {
   margin: auto auto -12em auto;
+  padding: 0 2em 0 2em;
 }
 
 .navbar {
@@ -9537,6 +9538,24 @@ section {
 
 .nav-item:hover {
   cursor: pointer;
+}
+
+.social-dropdown {
+  display: none;
+}
+.social-dropdown .social-logo {
+  height: 3em;
+  padding: 0.4em;
+}
+.social-dropdown .social-logo:hover {
+  height: 3.5em;
+}
+
+.social-link:hover .social-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -9557,7 +9576,8 @@ section {
 }
 
 .project-container {
-  padding: 3em 4.5em;
+  padding-top: 3em;
+  margin: auto -1.5em;
 }
 
 .project {
@@ -9590,6 +9610,9 @@ section {
   align-items: center;
   padding-right: 1.3em;
   margin: 1em auto;
+}
+.experience-container .experience-item:first-child {
+  margin-top: 0;
 }
 .experience-container .experience-item h4 {
   padding-top: 0.5em;
@@ -9676,6 +9699,12 @@ footer p {
 @media (min-width: 768px) {
   section {
     max-width: 1600px;
+    margin: auto;
+  }
+
+  .project-container {
+    max-width: 1400px;
+    margin: auto;
   }
 }
 @media (max-width: 991.98px) {

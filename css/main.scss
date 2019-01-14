@@ -11,6 +11,7 @@ h1, h3, h5 {
 
 section {
   margin: auto auto -12em auto;
+  padding: 0 2em 0 2em;
 }
 
 .navbar {
@@ -26,6 +27,26 @@ section {
 
 .nav-item:hover {
   cursor: pointer;
+}
+
+.social-dropdown {
+  display: none;
+
+  .social-logo {
+    height: 3em;
+    padding: 0.4em;
+
+    &:hover {
+      height: 3.5em;
+    }
+  }
+}
+
+.social-link:hover .social-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
@@ -50,7 +71,8 @@ section {
 // start projects section ------------------->
 
 .project-container {
-  padding: 3em 4.5em;
+  padding-top: 3em;
+  margin: auto -1.5em;
 }
 
 .project {
@@ -86,6 +108,10 @@ section {
     align-items: center;
     padding-right: 1.3em;
     margin: 1em auto;
+
+    &:first-child {
+      margin-top: 0;
+    }
 
     h4 {
       padding-top: 0.5em;
@@ -206,7 +232,12 @@ footer {
 
   section {
     max-width: 1600px;
-    // margin: 9em auto;
+    margin:auto;
+  }
+
+  .project-container {
+    max-width: 1400px;
+    margin: auto;
   }
 }
 
