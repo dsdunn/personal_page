@@ -9582,6 +9582,10 @@ section {
 
 .project {
   padding: 0 1.5em 0.5em 1.5em;
+  color: #212529;
+}
+.project:hover {
+  text-decoration: none;
 }
 
 .card-img-top {
