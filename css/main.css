@@ -9588,17 +9588,20 @@ section {
 .experience-container .experience-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
   padding-right: 1.3em;
+  margin: 1em auto;
 }
-.experience-container .experience-item h5 {
+.experience-container .experience-item h4 {
+  padding-top: 0.5em;
   margin: 0;
 }
-.experience-container .experience-item strong {
-  margin: 0;
+.experience-container .experience-item span {
+  font-family: "Exo", sans-serif;
 }
 .experience-container .experience-item p {
   max-width: 900px;
+  padding: 0.5em;
+  margin: 0 0 0 0.5em;
 }
 .experience-container .experience-item .ed-logo {
   height: 6em;

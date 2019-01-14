@@ -84,19 +84,22 @@ section {
   .experience-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1em; 
     padding-right: 1.3em;
+    margin: 1em auto;
 
-    h5 {
+    h4 {
+      padding-top: 0.5em;
       margin: 0;
     }
 
-    strong {
-      margin: 0;
+    span {
+      font-family: 'Exo', sans-serif;
     }
 
     p {
       max-width: 900px;
+      padding: 0.5em;
+      margin: 0 0 0 0.5em;
     }
 
     .ed-logo {
