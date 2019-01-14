@@ -259,9 +259,30 @@ footer {
     max-width: 100vw;
   }
 
-  .stack-collapse:not(.stack-expanded) {
-    display: none;
+  .navbar {
+    background: none;
+
+    .nav-item {
+      background: white;
+      text-align: center;
+    }
+
+    .navbar-nav {
+      margin-top: -40px;
+      z-index: 1;
+    }
+
+    button {
+      background: white;
+      z-index: 3;
+    }
   }
+
+  .social-dropdown {
+    flex-direction: row;
+    background: white;
+  }
+  
 
   .tech-stack {
     display: none;

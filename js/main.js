@@ -1,10 +1,4 @@
 
-
-// const projectsLink = $('#projects-link');
-//       experienceLink = $('#experience-link');
-//       aboutLink = $('#about-link');
-//       musicLink = $('#music-link');
-
 let activeLink = '#top-link';
 
 const exitObj = {opacity: 0, scale: 0.9, paused: true}
