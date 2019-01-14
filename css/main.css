@@ -9642,7 +9642,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: lightblue;
+  background: #d9eefa;
   padding: 1em 1.5em;
   width: 12em;
 }
